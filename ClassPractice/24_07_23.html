@@ -1,0 +1,77 @@
+<!-- 
+    Date:- 24/07/23
+    Day: Monday
+    Topic:-
+
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Show And Toggle</title>
+ </head>
+ <body>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <button id="fadeOut">Fade Out</button>
+    <button id="fadeIn">Fade In</button>
+    <button id="fadeToggle">Fade Toggle</button>
+    <button id="fadeTo">Fade To</button>
+    <button id="slideDown">Slide Down</button>
+    <button id="slideUp">Slide Up</button>
+    <button id="slideToggle">Slide Toggle</button>
+
+    <h1 id="h1">Wellcome to The World Of Jenish Lakkad</h1>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                $('#h1').hide(2000);
+                alert('Jenish Lakkad');
+            })
+    
+            $('#show').click(function(){
+                $('#h1').show();
+            })
+    
+            $('#toggle').click(function(){
+                $('#h1').toggle(2000,function(){
+                alert('Jenish Lakkad');
+                });
+            })
+            
+            // #######################       FADES  #################
+            $('#fadeOut').click(function(){
+                $('#h1').fadeOut();
+            })
+            $('#fadeIn').click(function(){
+                $('#h1').fadeIn();
+            })
+            $('#fadeToggle').click(function(){
+                $('#h1').fadeToggle();
+            })
+            $('#fadeTo').click(function(){
+                $('#h1').fadeTo(3000,0.5);
+            })
+
+            // #######################       SLIDE  #################
+            $('#slideUp').click(function(){
+                $('#h1').slideUp();
+            })
+            $('#slideDown').click(function(){
+                $('#h1').slideDown();
+            })
+            $('#slideToggle').click(function(){
+                $('#h1').slideToggle();
+            })
+
+            // #######################         Oninput  
+            
+            
+        })
+
+    </script>
+ </body>
+ </html>

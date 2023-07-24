@@ -1,0 +1,122 @@
+<!-- 
+    Date:- 24/07/23
+    Day: Monday
+    Topic:-
+
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Show And Toggle</title>
+ </head>
+ <body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Sr.No</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+            </tr>
+        </thead>
+        <tbody id="tBody">
+            <tr>
+                <td>1</td>
+                <td>Jenish</td>
+                <td>Jenish@gmail.com</td>
+                <td>1243439535</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mrugank</td>
+                <td>Mrugank@gmail.com</td>
+                <td>1243439535</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Dhruv</td>
+                <td>Dhruv@gmail.com</td>
+                <td>1243439535</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Meet</td>
+                <td>Meet@gmail.com</td>
+                <td>1243439535</td>
+            </tr>
+        </tbody>
+    </table>
+
+     <button id="hideEven">Hide Even</button>
+     <button id="hideOdd">Hide odd</button>
+     <button id="showEven">Show Even</button>
+     <button id="showOdd">Show odd</button>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+
+            $('#hideEven').click(function(){
+                $('#tBody > tr:even').hide();
+            })
+            $('#hideOdd').click(function(){
+                $('#tBody > tr:odd').hide();
+            })
+            $('#showEven').click(function(){
+                $('#tBody > tr:even').show();
+            })
+            $('#showOdd').click(function(){
+                $('#tBody > tr:odd').show();
+            })
+
+
+
+            // $('#hide').click(function(){
+            //     $('#h1').hide(2000);
+            //     alert('Jenish Lakkad');
+            // })
+    
+            // $('#show').click(function(){
+            //     $('#h1').show();
+            // })
+    
+            // $('#toggle').click(function(){
+            //     $('#h1').toggle(2000,function(){
+            //     alert('Jenish Lakkad');
+            //     });
+            // })
+            
+            // // #######################       FADES  #################
+            // $('#fadeOut').click(function(){
+            //     $('#h1').fadeOut();
+            // })
+            // $('#fadeIn').click(function(){
+            //     $('#h1').fadeIn();
+            // })
+            // $('#fadeToggle').click(function(){
+            //     $('#h1').fadeToggle();
+            // })
+            // $('#fadeTo').click(function(){
+            //     $('#h1').fadeTo(3000,0.5);
+            // })
+
+            // // #######################       SLIDE  #################
+            // $('#slideUp').click(function(){
+            //     $('#h1').slideUp();
+            // })
+            // $('#slideDown').click(function(){
+            //     $('#h1').slideDown();
+            // })
+            // $('#slideToggle').click(function(){
+            //     $('#h1').slideToggle();
+            // })
+
+            // #######################         Oninput  
+            
+            
+        })
+
+    </script>
+ </body>
+ </html>
